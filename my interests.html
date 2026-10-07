@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Jiaqi's Portfolio</title>
+
+    <style>
+
+    body {
+      background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    color: white;
+    font-family: Arial, sans-serif;
+    }
+
+    button {
+        color: skyblue;
+        background-color: white;
+        border: 1px solid white;
+        padding: 8px 15px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+ .school-name {
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <h1>Jiaqi Liu</h1>
+
+
+    <!-- About Me -->
+
+<button onclick="toggleAboutMe()">About Me</button>
+
+<div id="aboutMe" style="display: none;">
+
+    <p>I am a student at Brooklyn College.</p>
+
+    <h3>My Majors :</h3>
+
+    <p>
+        <strong>Information Systems</strong>
+    </p>
+
+    <p>
+        <strong>Communication Science and Disorders</strong>
+    </p>
+
+</div>
+
+
+    <!-- Education -->
+
+    <button onclick="toggleEducation()">Education</button>
+
+    <div id="education" style="display: none;">
+
+        <p class="school-name">
+            Brooklyn College, Brooklyn, NY
+        </p>
+
+        <p>
+            Bachelor of Science in Information Systems
+            (September 2021 - Present)
+        </p>
+
+        <p>
+            Bachelor of Arts in Communication Science and Disorders
+            (September 2021 - Present)
+        </p>
+
+        <p class="school-name">
+            Kingsborough Community College, Brooklyn, NY
+        </p>
+
+        <p>
+            Bachelor of Science in Biology (March 2019)
+        </p>
+
+    </div>
+
+
+    <!-- Experience -->
+
+    <button onclick="toggleExperience()">Experience</button>
+
+    <div id="experience" style="display: none;">
+
+        <h3>QualiMeds Pharmacy — Pharmacy Technician</h3>
+
+        <p>
+            Brooklyn, NY | 2019 - Present
+        </p>
+
+        <ul>
+            <li>Help customers complete Western Union's monetary transactions.</li>
+            <li>Help customers pick up medicine and guide customers to use medicine correctly.</li>
+        </ul>
+
+
+        <h3>eRxCity Pharmacy — Pharmacy Technician</h3>
+
+        <p>
+            Manhattan, NY | 2021 - 2024
+        </p>
+
+        <ul>
+            <li>Help customers complete Western Union's monetary transactions.</li>
+            <li>Help customers pick up medicine and guide customers to use medicine correctly.</li>
+        </ul>
+
+
+        <h3>Sweet House Drinks and Desserts — Kitchen Staff</h3>
+
+        <p>
+            Brooklyn, NY | 2018 - 2019
+        </p>
+
+        <ul>
+            <li>Make desserts.</li>
+            <li>Help kitchen and front staff.</li>
+        </ul>
+
+    </div>
+
+
+    <!-- Skills -->
+
+    <button onclick="toggleSkills()">Skills</button>
+
+    <div id="skills" style="display: none;">
+
+        <ul>
+
+            <li>Fluent in Mandarin, Cantonese, and Taishanese</li>
+
+            <li>Microsoft Word, Excel, and PowerPoint</li>
+
+            <li>Micro Merchant PrimeRx and Intercom Plus</li>
+
+            <li>Kinray</li>
+
+            <li>AmerisourceBergen</li>
+
+            <li>Smith HD</li>
+
+            <li>Anda</li>
+
+        </ul>
+
+    </div>
+
+
+    <!-- My Interest -->
+
+    <button onclick="toggleInterest()">My Interest</button>
+
+<div id="interest" style="display: none;">
+
+    <section>
+        <h2>Gardening</h2>
+        <p>I enjoy taking care of plants.</p>
+
+	 <video width="400" controls>
+        <source src="hua.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    </section>
+
+    <section>
+        <h2>Technology</h2>
+        <p>I am interested in programming and technology.</p>
+    </section>
+
+</div>
+
+
+    <!-- JavaScript -->
+
+    <script>
+
+        function toggleAboutMe() {
+
+           const content = document.getElementById("aboutMe");
+
+    if (content.style.display === "none") {
+        content.style.display = "block";
+    } else {
+        content.style.display = "none";
+    }
+
+        }
+
+	function toggleEducation() {
+
+    const content = document.getElementById("education");
+
+    if (content.style.display === "none") {
+        content.style.display = "block";
+    } else {
+        content.style.display = "none";
+    }
+
+}
+	function toggleExperience() {
+
+    		const content = document.getElementById("experience");
+	
+    	if (content.style.display === "none") {
+        content.style.display = "block";
+   	 } else {
+        content.style.display = "none";
+    }
+
+}
+        function toggleSkills() {
+
+	const content = document.getElementById("skills");
+
+   	 if (content.style.display === "none") {
+        content.style.display = "block";
+   		 } else {
+        content.style.display = "none";
+    }
+        }
+
+
+        function toggleInterest() {
+
+    const content = document.getElementById("interest");
+
+    if (content.style.display === "none") {
+        content.style.display = "block";
+    } else {
+        content.style.display = "none";
+    }
+
+}
+    </script>
+
+
+</body>
+
+</html>
